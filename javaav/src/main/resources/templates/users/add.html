@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un utilisateur</title>
+</head>
+<body>
+    <h1>Ajouter un utilisateur</h1>
+    <form th:action="@{/users/add}"
+          th:object="${userForm}" method="POST">
+        Prénom:
+        <input type="text" th:field="*{firstname}" />
+        <br/>
+        Nom:
+        <input type="text" th:field="*{lastname}" />
+        <br/>
+        Email:
+        <input type="email" th:field="*{email}" />
+        <br/>
+        Téléphone:
+        <input type="text" th:field="*{phone}" />
+        <br/>
+        <input type="submit" value="Enregistrer" />
+    </form>
+    <div th:if="${errorMessage}" th:utext="${errorMessage}"
+         style="color:red;font-style:italic;">
+        ...
+    </div>
+
+</body>
+</html>

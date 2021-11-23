@@ -73,4 +73,9 @@ public class UserDao {
         List<User> list = jdbcTemplate.query(sql, BeanPropertyRowMapper.newInstance(User.class));
         return list;
     }
+
+    public int add(User user){
+        String sql = "INSERT INTO users (lastname, firstname, email, phone) VALUES (?, ?, ?, ?);";
+        return jdbcTemplate.update(sql, user.getLastname(), user.getFirstname(), user.getEmail(), user.getPhone());
+    }
 }
