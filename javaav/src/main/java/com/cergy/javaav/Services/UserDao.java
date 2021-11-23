@@ -2,6 +2,7 @@ package com.cergy.javaav.Services;
 
 import com.cergy.javaav.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -52,7 +53,7 @@ public class UserDao {
         }
         return list;*/
 //stage 2: spring-jdbc
-        String sql = "SELECT * FROM users;";
+        /*String sql = "SELECT * FROM users;";
         List<User> list = jdbcTemplate.query(sql, new RowMapper<User>() {
 
                 @Override
@@ -65,7 +66,11 @@ public class UserDao {
                     return u;
             }
         });
+        return list;*/
 
+//stage 3: spring-jdbc auto mapper
+        String sql = "SELECT * FROM users;";
+        List<User> list = jdbcTemplate.query(sql, BeanPropertyRowMapper.newInstance(User.class));
         return list;
     }
 }
