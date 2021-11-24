@@ -61,16 +61,16 @@ Sur une chaine de caratères:
 Sur les valeurs numériques:
 - l'utilisateur peut rechercher une valeur fixe (rating=4) 
 - l'utilisateur peut rechercher plusieurs valeurs,  ex les produits de rating '4' ou '5' (rating=4,5)
-- l'utilisateur peut rechercher des fourchettes de valeurs,  ex les produits de rating compris en '4' et '10' (rating=[4,10])
-- l'utilisateur peut rechercher des valeurs inférieurs ou égal,  ex les produits de rating inférieur ou egal à '10' (rating=[,10])
-- l'utilisateur peut rechercher des valeurs supérieurs ou égal,  ex les produits de rating séperieur ou égal à '4' (rating=[4,])
+- l'utilisateur peut rechercher des fourchettes de valeurs,  ex les produits de rating compris en '4' et '10' (rating=(4,10))
+- l'utilisateur peut rechercher des valeurs inférieurs ou égal,  ex les produits de rating inférieur ou egal à '10' (rating=(,10))
+- l'utilisateur peut rechercher des valeurs supérieurs ou égal,  ex les produits de rating séperieur ou égal à '4' (rating=(4,))
 
 Sur les valaurs de temps:
 - l'utilisateur peut rechercher une valeur fixe (createdat=04-04-2020)
 - l'utilisateur peut rechercher plusieurs valeurs,  ex les produits créés le 04/04/2020 ou le 05/05/2020 (createdat=04-04-2020,05-05-2020)
-- l'utilisateur peut rechercher des fourchettes de valeurs,  ex les produits créés entre le 04/04/2020 et le 05/05/2020 (createdat=[04-04-2020,05-05-2020])
-- l'utilisateur peut rechercher des valeurs inférieurs ou égal,  ex les produits créés avant le 05/05/2020 (createdat=[,05-05-2020])
-- l'utilisateur peut rechercher des valeurs supérieurs ou égal,  ex les produits créés après le 04/04/2020 (createdat=[04-04-2020,])
+- l'utilisateur peut rechercher des fourchettes de valeurs,  ex les produits créés entre le 04/04/2020 et le 05/05/2020 (createdat=(04-04-2020,05-05-2020))
+- l'utilisateur peut rechercher des valeurs inférieurs ou égal,  ex les produits créés avant le 05/05/2020 (createdat=(,05-05-2020))
+- l'utilisateur peut rechercher des valeurs supérieurs ou égal,  ex les produits créés après le 04/04/2020 (createdat=(04-04-2020,))
 
 ## Recherche
 
