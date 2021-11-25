@@ -117,10 +117,10 @@ La soutenance dure 20 minutes durant lesquelles les membres présentent leur tra
 
 Les horaires de passage des groupes sont les suivants:
 
+- 13h40 =>
 - 14h00 =>
-- 14h30 =>
-- 14h50 =>
-- 15h10 =>
-- 15h30 =>
-- 16h00 =>
-- 16h20 =>
+- 14h20 =>
+- 14h40 =>
+- 15h00 =>
+- 15h20 =>
+- 15h40 =>
